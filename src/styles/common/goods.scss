@@ -1,0 +1,105 @@
+.goods{
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 16px;
+}
+
+.product{
+  position: relative;
+  width: 22.5%;
+  padding: 0 1.3rem 9px 1.3rem;
+  border: 1px solid #EEEEEE;
+  margin-right: 3.2%;
+  margin-bottom: 40px;
+}
+
+.product__sale{
+  position: absolute;
+  left: 0;
+  top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24%;
+  height: 24px;
+  background-color: $sale-background;
+}
+
+.sale__text{
+  font-family: 'SF Pro Display Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 130%;
+  color: $white;
+  letter-spacing: 0.01em;
+}
+
+.product:nth-child(4n){
+  margin-right: 0;
+}
+
+.product__code{
+  font-family: 'SF UI Text Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.625rem;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: $gray-600;
+  margin-bottom: 6px;
+}
+
+.product__name{
+  font-family: 'SF UI Text Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: $black;
+  margin-bottom: 9px;
+}
+
+.costs{
+  display: inline-flex;
+  width: 50%;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.product__cost{
+  font-family: 'SF UI Text Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: $black;
+}
+
+.product__cost--sale{
+  text-decoration-line: line-through;
+  color: $gray-600;
+  margin-right: 9px;
+}
+
+.actions{
+  display: inline-flex;
+  width: 50%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.action__icon{
+  cursor: pointer;
+  margin-right: 16.6%;
+}
+
+.action__icon:last-child{
+  margin-right: 0;
+}
+
+.goods__loader{
+  margin: 0 auto;
+}

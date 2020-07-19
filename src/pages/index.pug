@@ -1,0 +1,19 @@
+doctype html
+html(lang="ru")
+  block head
+    head
+      meta(charset="utf-8")
+      title Gulp Templates
+      meta(content="width=device-width, initial-scale=1" name="viewport")
+      meta(content="ie=edge" http-equiv="x-ua-compatible")
+      link(rel="stylesheet" href="./css/style.min.css")
+  body
+    block header
+      include common/header
+    block content
+      main.main
+        include includes/filters
+        include includes/goods
+    block footer
+    block scripts
+      script(src="./js/main.min.js")
